@@ -11,7 +11,7 @@ impl Solution {
         let min = std::i32::MIN as i64;
 
         while x != 0 {
-            y = (y * 10 + x % 10);
+            y = y * 10 + x % 10;
             if y > max || y < min {
                 return 0;
             }
